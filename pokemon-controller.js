@@ -22,13 +22,19 @@ function PokemonController(){
   }
 
 
+  this.addToMyPokemon = function(pokemonIndex){
+    pkService.addPokemon(pokemonIndex)
+    drawMyPokemonList()
+  }
+
+
   function drawAllPokemonList(response){
     pokeElem.innerHTML = ''
     var template = ''
 
-    response.results.forEach((p) => {
+    response.results.forEach((p, i) => {
       template += `
-        <div>${p.name}</div>
+        <div>${p.name} <button onclick="pokeCtrl.addToMyPokemon(${i})">ADD TO ROSTER</button> </div>
       `
     })
     pokeElem.innerHTML = template

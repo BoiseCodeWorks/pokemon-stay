@@ -6,7 +6,9 @@ function PokemonService(){
   var myPokemon = [{name: 'FAKE POKE 1'}, {name: 'FAKE POKE 2'}]
 
 
-  this.addPokemon = function(pokemon){
+  this.addPokemon = function(i){
+    
+    var pokemon = currentPage.results[i]
     myPokemon.push(pokemon)
   }
 
