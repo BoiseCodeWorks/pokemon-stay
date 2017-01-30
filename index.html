@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="button-group">
+    <button class="btn btn-danger" onclick="pokeCtrl.next(-1)">PREV</button>
+    <button class="btn btn-primary" onclick="pokeCtrl.next(1)">NEXT</button>
+  </div>
+  <div id="pokemon-results">
+    .... Pokemon Here someday ....
+  </div>
+
+  <div id="my-pokemon">
+    .... My Pokemon Here someday ....
+  </div>
+
+
+  <!--LIBRARIES-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+
+  <!--SERVICES-->
+  <script src="pokemon-service.js"></script>
+  
+  <!--CONTROLLERS-->
+  <script src="pokemon-controller.js"></script>
+  
+  <!--INITIALIZE APP-->
+  <script src="app.js"></script>
+
+</body>
+</html>

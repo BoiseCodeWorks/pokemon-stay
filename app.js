@@ -1,0 +1,1 @@
+var pokeCtrl = new PokemonController()
